@@ -189,7 +189,7 @@ header {
     text-decoration: none;
 }
 
-@media screen and (min-width: 321px) and (max-width: 749px) {
+@media screen and (min-width: 321px) {
     .barrier {
         display: block;
     }
