@@ -1,0 +1,450 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Roberto, sans-serif;
+    font-weight: 100;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #1E1E1E;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+}
+
+.barrier {
+    display: none;
+    height: 50px;
+}
+
+#last_barrier {
+    display: none;
+    height: 25px;
+}
+
+header {
+    background-color: #3C3C3C;
+    z-index: 10;
+}
+
+#header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px 5%;
+    z-index: 10;
+}
+
+#header_title {
+    font-size: 1.5em;
+    color: white;
+}
+
+#calculator_icon {
+    width: 25px;
+    height: 25px;
+}
+
+#calculator {
+    position: relative;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 55px 5% 5% 5%;
+}
+
+#phone_design {
+    display: none;
+}
+
+#phone_header {
+    position: relative;
+    top: -90px;
+    display: flex;
+    justify-content: space-between;
+}
+
+#time {
+    color: white;
+    font-size: 1.2em;
+}
+
+#battery {
+    background-color: #49e048;
+    border: solid white;
+    border-radius: 7px;
+    width: 40px;
+    height: 20px;
+}
+
+.phone_button {
+    position: absolute;
+    background-color: white;
+}
+
+#silent_button {
+    width: 3px;
+    height: 30px;
+    top: 75px;
+    left: -5px;
+    border-radius: 30px;
+}
+
+.volume {
+    width: 3px;
+    height: 50px;
+}
+
+#vol_up_button {
+    top: 125px;
+    left: -5px;
+    border-radius: 30px;
+}
+
+#vol_down_button {
+    top: 190px;
+    left: -5px;
+    border-radius: 30px;
+}
+
+#power_button {
+    width: 3px;
+    height: 70px;
+    top: 157px;
+    right: -5px;
+    border-radius: 30px;
+}
+
+#calc_output h1 {
+    color: white;
+    font-size: 50px;
+    text-align: end;
+    padding: 0 6%;
+}
+
+#calc_keypad {
+    display: grid;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-rows: repeat(5, minmax(0, 1fr));
+    grid-gap: 10px;
+}
+
+.calc_key {
+    background-color: #242529;
+    color: white;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    font-size: 35px;
+    aspect-ratio: 1;
+}
+
+.action {
+    background-color: #AAAAAA;
+    color: black;
+}
+
+.operation {
+    background-color: #FC9501;
+    color: white;
+    padding: 0;
+    font-size: 55px;
+}
+
+#key_absolute {
+    font-size: 35px;
+}
+
+#key_0 {
+    position: relative;
+    grid-column: 1 / 3;
+    border-radius: 50vw;
+    aspect-ratio: 2.1;
+}
+
+#key_0 p {
+    position: absolute;
+    top: 4vw;
+    left: 7vw;
+}
+
+#copyright {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    gap: 5px;
+}
+
+.cr_text {
+    color: #636363;
+    text-decoration: none;
+}
+
+@media screen and (min-width: 321px) and (max-width: 749px) {
+    .barrier {
+        display: block;
+    }
+    
+    #last_barrier {
+        display: block;
+    }
+
+    #calculator {
+        border: solid white;
+        border-radius: 30px;
+        padding: 108px 5% 5% 5%;
+        margin: 10% 10% 0 10%;
+    }
+
+    #calc_keypad {
+        grid-gap: 2vw;
+    }
+   
+    .calc_key {
+        font-size: 8vw;
+    }
+
+    #calc_output h1 {
+        font-size: 15vw;
+    }
+    
+    .operation {
+        font-size: 13vw;
+    }
+    
+    #key_absolute {
+        font-size: 9vw;
+    }
+    
+    #key_0 p {
+        top: 3vw;
+        left: 6vw;
+    }
+
+    #phone_design {
+        display: block;
+    }
+
+    #by-mn-BR-con00 .barrier {
+        display: block;
+    }
+
+    #copyright {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 750px) and (max-width: 1099px) {
+    .barrier {
+        display: block;
+    }
+
+    #last_barrier {
+        display: block;
+    }
+
+    #header {
+        gap: 15px;
+        padding: 10px 5%;
+    }
+    
+    #header_title {
+        font-size: 2em;
+        color: white;
+    }
+    
+    #calculator_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #calculator {
+        border: solid white;
+        border-radius: 30px;
+        padding: 125px 5% 5% 5%;
+        margin: 10% 20% 0 20%;
+    }
+
+    #calc_keypad {
+        grid-gap: 2vw;
+    }
+    
+    .calc_key {
+        font-size: 6vw;
+    }
+    
+    #calc_output h1 {
+        font-size: 10vw;
+    }
+
+    .operation {
+        font-size: 9vw;
+    }
+    
+    #key_absolute {
+        font-size: 6vw;
+    }
+    
+    #key_0 p {
+        top: 2vw;
+        left: 4vw;
+    }
+    
+    #phone_design {
+        display: block;
+    }
+    
+    .phone_button {
+        position: absolute;
+        background-color: white;
+    }
+    
+    #silent_button {
+        width: 5px;
+        height: 40px;
+        top: 100px;
+        left: -7px;
+    }
+    
+    .volume {
+        width: 5px;
+        height: 60px;
+    }
+    
+    #vol_up_button {
+        top: 165px;
+        left: -7px;
+    }
+    
+    #vol_down_button {
+        top: 245px;
+        left: -7px;
+    }
+    
+    #power_button {
+        width: 5px;
+        height: 80px;
+        top: 205px;
+        right: -7px;
+    }
+    
+    #by-mn-BR-con00 .barrier {
+        display: block;
+    }
+
+    #copyright {
+        display: flex;
+    }
+}
+
+@media screen and (min-width: 1100px) {
+    .barrier {
+        display: block;
+    }
+
+    #last_barrier {
+        display: block;
+    }
+    
+    #header {
+        gap: 15px;
+        padding: 10px 5%;
+    }
+    
+    #header_title {
+        font-size: 2em;
+        color: white;
+    }
+    
+    #calculator_icon {
+        width: 50px;
+        height: 50px;
+    }
+
+    #calculator {
+        border: solid white;
+        border-radius: 30px;
+        padding: 150px 5% 5% 5%;
+        margin: 5% 30% 0% 30%;
+    }
+
+    #calc_keypad {
+        grid-gap: 15px;
+    }
+
+    .calc_key {
+        font-size: 40px;
+    }
+    
+    .operation {
+        font-size: 59px;
+    }
+
+    #key_absolute {
+        font-size: 38px;
+    }
+    
+    #key_0 p {
+        top: 14px;
+        left: 25px;
+    }
+
+    #phone_design {
+        display: block;
+    }
+    
+    .phone_button {
+        position: absolute;
+        background-color: white;
+    }
+    
+    #silent_button {
+        width: 5px;
+        height: 40px;
+        top: 120px;
+        left: -7px;
+    }
+    
+    .volume {
+        width: 5px;
+        height: 60px;
+    }
+    
+    #vol_up_button {
+        top: 185px;
+        left: -7px;
+    }
+    
+    #vol_down_button {
+        top: 265px;
+        left: -7px;
+    }
+    
+    #power_button {
+        width: 5px;
+        height: 80px;
+        top: 225px;
+        right: -7px;
+    }
+    
+    #calc_output h1 {
+        font-size: 75px;
+    }
+
+    #by-mn-BR-con00 .barrier {
+        display: block;
+    }
+
+    #copyright {
+        display: flex;
+    }
+}
