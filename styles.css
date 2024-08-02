@@ -215,8 +215,7 @@ header {
     }
 
     #calc_output h1 {
-        /* font-size: 15vw */
-        font-size: 10vw;
+        font-size: 15vw;
     }
     
     .operation {
@@ -285,8 +284,7 @@ header {
     }
     
     #calc_output h1 {
-        /* font-size: 8vw */
-        font-size: 6vw;
+        font-size: 8vw;
     }
 
     .operation {
@@ -393,7 +391,6 @@ header {
     }
     
     #calc_output h1 {
-        /*font-size: 75px;*/
         font-size: 50px;
     }
 }
