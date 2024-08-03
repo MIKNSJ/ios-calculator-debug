@@ -40,25 +40,3 @@ body {
     grid-template-rows: repeat(5, minmax(0, 1fr));
     grid-gap: 10px;
 }
-
-.calc_key {
-    background-color: #242529;
-    color: white;
-    padding: 0;
-    border: none;
-    border-radius: 50%;
-    font-size: 35px;
-    aspect-ratio: 1;
-}
-
-.action {
-    background-color: #AAAAAA;
-    color: black;
-}
-
-.operation {
-    background-color: #FC9501;
-    color: white;
-    padding: 0;
-    font-size: 55px;
-}
