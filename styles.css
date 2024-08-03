@@ -18,15 +18,6 @@ body {
     margin: 0 auto;
 }
 
-#calculator {
-    position: relative;
-    background-color: black;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    padding: 55px 5% 5% 5%;
-}
-
 #calc_output h1 {
     color: white;
 }
