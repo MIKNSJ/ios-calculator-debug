@@ -27,68 +27,6 @@ body {
     padding: 55px 5% 5% 5%;
 }
 
-#phone_design {
-    display: none;
-}
-
-#phone_header {
-    position: relative;
-    top: -30px;
-    display: flex;
-    justify-content: space-between;
-}
-
-#time {
-    color: white;
-    font-size: 1em;
-}
-
-#battery {
-    background-color: #49e048;
-    border: solid white;
-    border-radius: 5px;
-    width: 30px;
-    height: 15px;
-}
-
-.phone_button {
-    position: absolute;
-    background-color: white;
-}
-
-#silent_button {
-    width: 3px;
-    height: 30px;
-    top: 75px;
-    left: -5px;
-    border-radius: 30px;
-}
-
-.volume {
-    width: 3px;
-    height: 50px;
-}
-
-#vol_up_button {
-    top: 125px;
-    left: -5px;
-    border-radius: 30px;
-}
-
-#vol_down_button {
-    top: 190px;
-    left: -5px;
-    border-radius: 30px;
-}
-
-#power_button {
-    width: 3px;
-    height: 70px;
-    top: 157px;
-    right: -5px;
-    border-radius: 30px;
-}
-
 #calc_output h1 {
     color: white;
     font-size: 50px;
