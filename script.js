@@ -21,7 +21,7 @@ function clickedButton(key) {
     }
     
     if (key.classList.contains("number")) {
-        num = num.concat(key.innerText);
+        num+=key.innerText;
         output.innerText = num;
     }
 }
