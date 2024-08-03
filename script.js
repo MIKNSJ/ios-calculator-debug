@@ -5,5 +5,6 @@ function clickedButton(key) {
     var output = document.getElementById("calc_output_text");
     
     num+=key.innerText;
-    output.textContent = num.trim();
+    output.textContent = num;
+    output.textContent = output.textContent.trim();
 }
