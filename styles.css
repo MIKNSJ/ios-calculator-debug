@@ -2,8 +2,7 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
-    font-family: Roboto, sans-serif;
-    font-weight: 400;
+    font-family: Roboto;
 }
 
 html {
@@ -191,14 +190,6 @@ header {
 
 /* Actual phone design + calculator occurs here */
 @media screen and (min-width: 320px) {
-    .barrier {
-        display: block;
-    }
-    
-    #last_barrier {
-        display: block;
-    }
-
     #calculator {
         border: solid white;
         border-radius: 30px;
@@ -240,157 +231,3 @@ header {
     }
 }
 
-@media screen and (min-width: 750px) {
-    #header {
-        gap: 15px;
-        padding: 10px 5%;
-    }
-    
-    #header_title {
-        font-size: 2em;
-        color: white;
-    }
-    
-    #calculator_icon {
-        width: 50px;
-        height: 50px;
-    }
-
-    #calculator {
-        padding: 75px 5% 5% 5%;
-        margin: 10% 20% 0 20%;
-    }
-
-    #battery {
-        border-radius: 7px;
-        width: 35px;
-        height: 20px;
-    }
-
-    #time {
-        font-size: 1.25em;
-    }
-    
-    #phone_header {
-        top: -50px;
-    }
-
-    #calc_keypad {
-        grid-gap: 2vw;
-    }
-    
-    .calc_key {
-        font-size: 6vw;
-    }
-    
-    #calc_output h1 {
-        font-size: 8vw;
-    }
-
-    .operation {
-        font-size: 9vw;
-    }
-    
-    #key_absolute {
-        font-size: 6vw;
-    }
-    
-    #key_0 p {
-        top: 2vw;
-        left: 4vw;
-    }
-    
-    #silent_button {
-        width: 5px;
-        height: 40px;
-        top: 100px;
-        left: -7px;
-    }
-    
-    .volume {
-        width: 5px;
-        height: 60px;
-    }
-    
-    #vol_up_button {
-        top: 165px;
-        left: -7px;
-    }
-    
-    #vol_down_button {
-        top: 245px;
-        left: -7px;
-    }
-    
-    #power_button {
-        width: 5px;
-        height: 80px;
-        top: 205px;
-        right: -7px;
-    }
-}
-
-@media screen and (min-width: 1100px) {
-    #calculator {
-        padding: 75px 3% 3% 3%;
-        margin: 5% 30% 0% 30%;
-    }
-
-    #calc_keypad {
-        grid-gap: 15px;
-    }
-
-    .calc_key {
-        font-size: 40px;
-    }
-    
-    .operation {
-        font-size: 59px;
-    }
-
-    #key_absolute {
-        font-size: 38px;
-    }
-    
-    #key_0 p {
-        top: 20px;
-        left: 30px;
-    }
-
-    #time {
-        font-size: 20px;
-    }
-    
-    #silent_button {
-        width: 5px;
-        height: 40px;
-        top: 120px;
-        left: -7px;
-    }
-    
-    .volume {
-        width: 5px;
-        height: 60px;
-    }
-    
-    #vol_up_button {
-        top: 185px;
-        left: -7px;
-    }
-    
-    #vol_down_button {
-        top: 265px;
-        left: -7px;
-    }
-    
-    #power_button {
-        width: 5px;
-        height: 80px;
-        top: 225px;
-        right: -7px;
-    }
-    
-    #calc_output h1 {
-        font-size: 50px;
-    }
-}
