@@ -29,9 +29,6 @@ body {
 
 #calc_output h1 {
     color: white;
-    font-size: 50px;
-    text-align: end;
-    overflow: hidden;
 }
 
 #calc_keypad {
