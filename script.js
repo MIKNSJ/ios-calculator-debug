@@ -21,28 +21,7 @@ function clickedButton(key) {
     }
     
     if (key.classList.contains("number")) {
-        if (num.length == 1 && num[0] == "0") {
-            num = "";
-        }
-
-        //num+=key.innerText;
         num = num.concat(key.innerText);
         output.innerText = num;
-
-        if (enableAbsoluteZero) {
-            var textToInt = Number(num);
-            textToInt*=-1;
-            num = textToInt.toString();
-            output.innerText = num;
-            enableAbsoluteZero = false;
-        }
-
-        enableOperator = false;
-
-        if (num.length == 1 && num[0] == "0") {
-            key_clear.innerText = "AC";
-        } else {
-            key_clear.innerText = "C";
-        }
     }
 }
