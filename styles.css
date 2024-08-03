@@ -18,39 +18,6 @@ body {
     margin: 0 auto;
 }
 
-.barrier {
-    display: none;
-    height: 50px;
-}
-
-#last_barrier {
-    display: none;
-    height: 25px;
-}
-
-header {
-    background-color: #3C3C3C;
-    z-index: 10;
-}
-
-#header {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    padding: 10px 5%;
-    z-index: 10;
-}
-
-#header_title {
-    font-size: 1.5em;
-    color: white;
-}
-
-#calculator_icon {
-    width: 25px;
-    height: 25px;
-}
-
 #calculator {
     position: relative;
     background-color: black;
@@ -182,31 +149,6 @@ header {
         border-radius: 30px;
         padding: 50px 5% 5% 5%;
         margin: 10% 10% 0 10%;
-    }
-
-    #calc_keypad {
-        grid-gap: 2vw;
-    }
-   
-    .calc_key {
-        font-size: 8vw;
-    }
-
-    #calc_output h1 {
-        font-size: 15vw;
-    }
-    
-    .operation {
-        font-size: 13vw;
-    }
-    
-    #key_absolute {
-        font-size: 9vw;
-    }
-    
-    #key_0 p {
-        top: 3vw;
-        left: 6vw;
     }
 }
 
