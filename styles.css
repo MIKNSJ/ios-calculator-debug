@@ -175,19 +175,6 @@ header {
     left: 7vw;
 }
 
-#copyright {
-    display: none;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 5%;
-    gap: 5px;
-}
-
-.cr_text {
-    color: #636363;
-    text-decoration: none;
-}
-
 /* Actual phone design + calculator occurs here */
 @media screen and (min-width: 320px) {
     #calculator {
@@ -220,14 +207,6 @@ header {
     #key_0 p {
         top: 3vw;
         left: 6vw;
-    }
-
-    #phone_design {
-        display: block;
-    }
-
-    #copyright {
-        display: flex;
     }
 }
 
